@@ -1,0 +1,20 @@
+default: COMMON
+
+COMMON:
+  lore: "\n&f&lCOMMON"
+
+RARE:
+  lore: "\n&9&lRARE"
+  items:
+  - BEACON
+  - OBSIDIAN
+
+  custom-items:
+    1:
+      material: DIAMOND_PICKAXE
+      name: "&cRare Pickaxe"
+
+      enchants:
+        1:
+          enchant-type: sharpness
+          level: 1

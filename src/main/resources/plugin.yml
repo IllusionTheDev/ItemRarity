@@ -1,0 +1,8 @@
+name: ItemRarity
+version: 1
+main: me.illusion.itemrarity.ItemRarityPlugin
+
+depend:
+- ProtocolLib
+
+api-version: 1.17
