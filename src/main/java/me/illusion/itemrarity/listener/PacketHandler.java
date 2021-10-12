@@ -97,7 +97,7 @@ public class PacketHandler {
             List<String> secondCopy = new ArrayList<>(copy);
             for (String line : copy)
                 if (line.startsWith(ChatColor.translateAlternateColorCodes('&', rarity.getLore()))) {
-                    System.out.println("removed " + line);
+                    // System.out.println("removed " + line);
                     secondCopy.remove(line);
                 }
 
