@@ -121,6 +121,11 @@ public class ItemBuilder {
 
             Enchantment enchant = Enchantment.getByKey(NamespacedKey.minecraft(key));
 
+            if(enchant == null) {
+                System.out.println("Mitigated null enchant (" + key + "), check your config.");
+                continue;
+            }
+
             enchantments.put(enchant, level);
         }
         return this;

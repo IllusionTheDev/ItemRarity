@@ -1,10 +1,10 @@
 default: COMMON
 
 COMMON:
-  lore: "\n&f&lCOMMON"
+  lore: "&f&lCOMMON"
 
 RARE:
-  lore: "\n&9&lRARE"
+  lore: "&9&lRARE"
   items:
   - BEACON
   - OBSIDIAN
