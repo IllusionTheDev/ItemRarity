@@ -116,11 +116,10 @@ public class ItemBuilder {
     }
 
     public ItemBuilder enchants(ConfigurationSection section) {
-        for (String str : section.getKeys(false)) {
-            String name = section.getString(str + ".enchant-type");
-            int level = section.getInt(str + ".level");
+        for (String key : section.getKeys(false)) {
+            int level = section.getInt(key);
 
-            Enchantment enchant = Enchantment.getByKey(NamespacedKey.minecraft(name));
+            Enchantment enchant = Enchantment.getByKey(NamespacedKey.minecraft(key));
 
             enchantments.put(enchant, level);
         }
